@@ -1,0 +1,18 @@
+model_list:
+  - model_name: claude-opus-4-7
+    litellm_params:
+      model: gemini/gemma-4-31b-it
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: claude-sonnet-4-6
+    litellm_params:
+      model: gemini/gemma-4-31b-it
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: claude-haiku-4-5-20251001
+    litellm_params:
+      model: gemini/gemma-4-26b-a4b-it
+      api_key: os.environ/GEMINI_API_KEY
+
+litellm_settings:
+  drop_params: true

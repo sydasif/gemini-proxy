@@ -1,0 +1,15 @@
+services:
+  gemini-proxy:
+    build: .
+    container_name: gemini-proxy
+    ports:
+      - "3455:3455"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    env_file:
+      - .env
+
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+
+    restart: unless-stopped
