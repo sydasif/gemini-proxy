@@ -45,6 +45,7 @@ Example mapping:
 
 - `claude-opus-4-7` -> `gemini/gemma-4-31b-it`
 - `claude-sonnet-4-6` -> `gemini/gemma-4-31b-it`
+- `claude-haiku-4-5-20251001` -> `gemini/gemma-4-26b-a4b-it`
 
 ## Using with Claude Code
 
