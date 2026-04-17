@@ -1,6 +1,6 @@
 # Gemini Proxy
 
-A LiteLLM proxy that maps Claude-style model names to Gemini models, allowing for easy integration with tools expecting Claude but using Gemini under the hood.
+A LiteLLM proxy that maps Claude-Code models to Gemini models, allowing for easy integration with Claude using Gemini under the hood.
 
 ## Features
 
@@ -44,8 +44,8 @@ The `config.yaml` file defines the model mapping. You can add or modify models h
 Example mapping:
 
 - `claude-opus-4-7` -> `gemini/gemma-4-31b-it`
-- `claude-sonnet-4-6` -> `gemini/gemma-4-31b-it`
-- `claude-haiku-4-5-20251001` -> `gemini/gemma-4-26b-a4b-it`
+- `claude-sonnet-4-6` -> `gemini/gemma-4-26b-a4b-it`
+- `claude-haiku-4-5-20251001` -> `gemini-3.1-flash-lite-preview`
 
 ## Using with Claude Code
 
@@ -59,4 +59,5 @@ To use this proxy with Claude Code, add the following to your `.claude/settings.
   }
 }
 ```
+
 Replace `sk-xxx` with a dummy token if the proxy doesn't require one, or your actual token if it does.

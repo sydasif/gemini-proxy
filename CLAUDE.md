@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-- **Core:** The project is a LiteLLM proxy deployment that translates Claude-style model requests into Gemini API calls.
+- **Core:** The project is a LiteLLM proxy deployment that translates Claude-Code model requests into Gemini API calls.
 - **Configuration:**
   - `config.yaml`: Defines the model mapping (e.g., mapping `claude-sonnet-4-6` to a specific Gemini model).
   - `.env`: Stores the `GEMINI_API_KEY` required for authentication with Google AI Studio.
