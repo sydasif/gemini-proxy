@@ -91,7 +91,27 @@ To add a new mapping, edit `config.yaml`:
 
 ---
 
-## 🛠️ Operations
+## 🔧 Docker Customization
+
+If you need to change the default port (e.g., due to a conflict), you can modify the `ports` section in `docker-compose.yml`:
+
+```yaml
+services:
+  gemini-proxy:
+    ...
+    ports:
+      - "8080:3455" # Maps port 8080 on your host to 3455 in the container
+    ...
+```
+
+After changing the port, restart the proxy:
+```bash
+docker compose down
+docker compose up -d
+```
+
+---
+
 
 | Action | Command |
 | :--- | :--- |
