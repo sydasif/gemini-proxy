@@ -82,6 +82,7 @@ Mappings are managed in `config.yaml`. This allows you to point specific Claude 
 | `gemini-3.1-flash-lite-preview` | `gemini/gemini-3.1-flash-lite-preview` |
 
 To add a new mapping, edit `config.yaml`:
+
 ```yaml
   - model_name: claude-v1
     litellm_params:
@@ -105,13 +106,13 @@ services:
 ```
 
 After changing the port, restart the proxy:
+
 ```bash
 docker compose down
 docker compose up -d
 ```
 
 ---
-
 
 | Action | Command |
 | :--- | :--- |
