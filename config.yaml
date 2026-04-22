@@ -3,16 +3,19 @@ model_list:
     litellm_params:
       model: gemini/gemma-4-31b-it
       api_key: os.environ/GEMINI_API_KEY
+      rpm: 20
 
   - model_name: claude-sonnet-4-6
     litellm_params:
       model: gemini/gemma-4-26b-a4b-it
       api_key: os.environ/GEMINI_API_KEY
+      rpm: 20
 
   - model_name: claude-haiku-4-5-20251001
     litellm_params:
       model: gemini/gemma-4-26b-a4b-it
       api_key: os.environ/GEMINI_API_KEY
+      rpm: 20
 
   - model_name: gemini-3.1-flash-lite-preview
     litellm_params:
